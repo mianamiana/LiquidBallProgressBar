@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.mianamiana.liquidballprogressbar.SampleActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="16dp"
+                android:text="Default"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#040404" />
+
+            <com.mianamiana.library.LiquidBallProgressBar
+                android:id="@+id/lpb"
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="16dp"
+                android:text="By code"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#040404" />
+
+            <com.mianamiana.library.LiquidBallProgressBar
+                android:id="@+id/lpbCode"
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="16dp"
+                android:text="By xml"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#040404" />
+
+            <com.mianamiana.library.LiquidBallProgressBar xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/lpbXml"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+
+                app:ballBorderColor="#cfcfcf"
+                app:ballBorderWidth="6dp"
+                app:maxProgress="100"
+                app:progress="40"
+                app:textColor="#2196F3"
+                app:textOverlapColor="#ffffff"
+                app:textSize="22sp"
+                app:unfilledColor="#442196F3"
+                app:waveColor="#2196F3" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/btnIncrease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:onClick="onClick"
+        android:padding="16dp"
+        android:src="@drawable/ic_keyboard_arrow_up_green_500_24dp" />
+
+    <ImageButton
+        android:id="@+id/btnDecrease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:onClick="onClick"
+        android:padding="16dp"
+        android:src="@drawable/ic_keyboard_arrow_down_green_500_24dp" />
+
+
+</FrameLayout>
