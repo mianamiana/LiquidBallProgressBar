@@ -3,6 +3,11 @@ Android Liquid Ball
 
 ![Image text](https://github.com/mianamiana/LiquidBallProgressBar/blob/master/LiquidBall.gif)
 
+Supported versions
+-
+Support ice_cream_sandwich(4.0) and above ;
+You can also use [nineOldAndroids](https://github.com/JakeWharton/NineOldAndroids) to support all versions
+
 
 Gratitude
 -
