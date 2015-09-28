@@ -119,19 +119,19 @@ public class LiquidBallProgressBar extends FrameLayout {
     private void initAttrs(Context context, AttributeSet attrs) {
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.LiquidBallProgressBar);
         try {
-            mBorderColor = a.getColor(R.styleable.LiquidBallProgressBar_ballBorderColor, mBorderColor);
-            mTextColor = a.getColor(R.styleable.LiquidBallProgressBar_textColor, mTextColor);
-            mWaveColor = a.getColor(R.styleable.LiquidBallProgressBar_waveColor, mWaveColor);
-            mUnfilledWaveColor = a.getColor(R.styleable.LiquidBallProgressBar_unfilledColor, mUnfilledWaveColor);
-            mTextOverlapColor = a.getColor(R.styleable.LiquidBallProgressBar_textOverlapColor, mTextOverlapColor);
-            int textsize = a.getDimensionPixelSize(R.styleable.LiquidBallProgressBar_textSize, 0);
+            mBorderColor = a.getColor(R.styleable.LiquidBallProgressBar_lbpb_borderColor, mBorderColor);
+            mTextColor = a.getColor(R.styleable.LiquidBallProgressBar_lbpb_textColor, mTextColor);
+            mWaveColor = a.getColor(R.styleable.LiquidBallProgressBar_lbpb_waveColor, mWaveColor);
+            mUnfilledWaveColor = a.getColor(R.styleable.LiquidBallProgressBar_lbpb_unfilledColor, mUnfilledWaveColor);
+            mTextOverlapColor = a.getColor(R.styleable.LiquidBallProgressBar_lbpb_textOverlapColor, mTextOverlapColor);
+            int textsize = a.getDimensionPixelSize(R.styleable.LiquidBallProgressBar_lbpb_textSize, 0);
             if(textsize!=0)
             {
                 mTextSize =textsize/ context.getResources().getDisplayMetrics().scaledDensity;
             }
-            mBorderWidth = (int) (a.getDimension(R.styleable.LiquidBallProgressBar_ballBorderWidth, mBorderWidth) + 0.5f);
-            mProgress = a.getInteger(R.styleable.LiquidBallProgressBar_progress, mProgress);
-            mMaxProgress = a.getInteger(R.styleable.LiquidBallProgressBar_maxProgress, mMaxProgress);
+            mBorderWidth = (int) (a.getDimension(R.styleable.LiquidBallProgressBar_lbpb_borderWidth, mBorderWidth) + 0.5f);
+            mProgress = a.getInteger(R.styleable.LiquidBallProgressBar_lbpb_progress, mProgress);
+            mMaxProgress = a.getInteger(R.styleable.LiquidBallProgressBar_lbpb_maxProgress, mMaxProgress);
         } finally {
             a.recycle();
         }

@@ -59,15 +59,15 @@
                 android:layout_width="120dp"
                 android:layout_height="120dp"
 
-                app:ballBorderColor="#cfcfcf"
-                app:ballBorderWidth="6dp"
-                app:maxProgress="100"
-                app:progress="40"
-                app:textColor="#2196F3"
-                app:textOverlapColor="#ffffff"
-                app:textSize="22sp"
-                app:unfilledColor="#442196F3"
-                app:waveColor="#2196F3" />
+                app:lbpb_borderColor="#cfcfcf"
+                app:lbpb_borderWidth="6dp"
+                app:lbpb_maxProgress="100"
+                app:lbpb_progress="40"
+                app:lbpb_textColor="#2196F3"
+                app:lbpb_textOverlapColor="#ffffff"
+                app:lbpb_textSize="22sp"
+                app:lbpb_unfilledColor="#442196F3"
+                app:lbpb_waveColor="#2196F3" />
 
         </LinearLayout>
 
