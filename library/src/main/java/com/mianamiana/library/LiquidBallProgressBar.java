@@ -104,7 +104,7 @@ public class LiquidBallProgressBar extends FrameLayout {
 
 
         // wave drawable
-        mWave = getResources().getDrawable(R.drawable.wave);
+        mWave =DrawableCompat.wrap(getResources().getDrawable(R.drawable.wave));
         mWave.mutate();
         mWaveW = mWave.getIntrinsicWidth();
         mWaveH = mWave.getIntrinsicHeight();
